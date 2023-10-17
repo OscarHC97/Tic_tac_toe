@@ -5,6 +5,11 @@ class NodoARBOL:
         self.izquierdo = None
         self.derecho = None
 
+raiz  = NodoARBOL()
+raiz.data = "raiz"
+raiz.izquierdo = NodoARBOL()
+raiz.izquierdo.data = "perro"
+raiz.derecho = NodoARBOL()
+raiz.derecho.data = "gato"
 
-class Arbol():
-    cadena = 0
+print(raiz.derecho.data)
