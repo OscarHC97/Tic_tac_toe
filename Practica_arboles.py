@@ -4,3 +4,7 @@ class NodoARBOL:
         self.data = dato
         self.izquierdo = None
         self.derecho = None
+
+
+class Arbol():
+    cadena = 0

@@ -12,7 +12,21 @@ def check_turn(turn):
     else: return "X"
     
 def check_for_win(spots):
-    result =1
+
+    ganador = False
+    if (spots[1] == spots[2] == spots[3]  or 
+        spots[4] == spots[5] == spots[6] 
+        or spots[7] == spots[8] == spots[9]  ):
+        ganador  = True 
+    elif (spots[1] == spots[4] == spots[7]  or 
+        spots[2] == spots[5] == spots[8] 
+        or spots[3] == spots[6] == spots[9]):
+        ganador =  True
+    elif (spots[1] == spots[5] == spots[9]  or 
+        spots[7] == spots[5] == spots[3]):
+        ganador = True 
+
+    return  ganador
 
 
 playing=True
@@ -29,3 +43,7 @@ while playing:
         if  spots[int(choice)] not in {"X", "O"}:
             turn += 1
             spots [int(choice)] = check_turn(turn)
+    
+    if check_for_win(spots) == True:
+        print("Ganaste")
+        playing  = False
