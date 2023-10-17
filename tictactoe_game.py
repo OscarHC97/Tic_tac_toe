@@ -25,7 +25,7 @@ def check_for_win(spots):
     elif (spots[1] == spots[5] == spots[9]  or 
         spots[7] == spots[5] == spots[3]):
         ganador = True 
-
+                                                                                                                                                                                                                                                          
     return  ganador
 
 

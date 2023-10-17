@@ -12,4 +12,4 @@ raiz.izquierdo.data = "perro"
 raiz.derecho = NodoARBOL()
 raiz.derecho.data = "gato"
 
-print(raiz.derecho.data)
+print(raiz.izquierdo.data)
